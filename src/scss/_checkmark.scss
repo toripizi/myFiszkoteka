@@ -1,0 +1,32 @@
+.label{
+   display: flex;
+   cursor: pointer;
+   font-weight: 700;
+   >input {
+      position: absolute;
+      opacity: 0;
+   }
+   .checkmark{
+      width: 20px;
+      height: 20px;
+      margin-right: 15px;
+      cursor: pointer;
+      background-color: var(--checkmark-bg);
+      transition: background-color 0.2s ease-in-out;
+      >i{
+         font-size: 16px;
+         opacity: 0;
+         cursor: pointer;
+         transition: opacity 0.2s ease-in-out;
+      }
+   }
+}
+.label:hover .checkmark{
+   background-color: var(--checkmark-h-bg);
+}
+.label >input:checked ~ .checkmark {
+   background-color: var(--checkmark-h-bg);
+   >i{
+      opacity: 1;
+   }
+}

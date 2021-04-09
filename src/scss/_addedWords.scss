@@ -1,0 +1,43 @@
+.pojemnik{
+   height: 100px;
+   width: 100%;
+   margin: 20px 0;
+   background-color: white;
+   border-radius: 5px;
+   .lewy{
+      padding-left: 50px;
+      width: 50%;
+      height: 100%;
+      font-size: 30px;
+      border: none;
+      border-right:solid 4px var(--nav-border-c);
+      border-radius: 0;
+   }
+   .pojemnikPrawy{
+      width: 50%;
+      height: 100%;
+   }
+   .prawy{
+      padding-left: 50px;
+      width: 50%;
+      height: 100%;
+      font-size: 30px;
+      border-radius: 0;
+      border: none;
+   }
+   .plusIcon{
+      width: 20%;
+      height: 100px;
+      border:none;
+      background-color: rgb(158, 158, 158);
+      >i{
+         font-size: 50px;
+         color: rgb(46, 46, 46);
+      }
+   }
+   .plusIcon:hover{
+      cursor: pointer;
+      background-color: rgb(124, 124, 124);
+      >i {color:rgb(0, 0, 0);}
+   }
+}

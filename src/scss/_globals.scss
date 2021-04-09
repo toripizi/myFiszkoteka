@@ -1,0 +1,176 @@
+html{
+   font-size: 100%;
+   box-sizing: border-box;
+   color: black;
+   height: 100%;
+   background-color:$lightGrey;
+   font-family: 'Lato', sans-serif;
+}
+
+*,*::before, *::after{
+   box-sizing: inherit;
+}
+
+body{
+   margin: 0;
+   padding: 0;
+   line-height: 1.3;
+}
+
+.flex{
+   display: flex;
+
+   &-jc-sb{justify-content: space-between;}
+   &-jc-sa{justify-content: space-around;}
+   &-jc-c{justify-content: center;}
+   &-ai-c{align-items: center;}
+   &-column{flex-direction: column;}
+}
+
+#root{
+   max-width: 100vw;
+   &-app{
+      width: 80vw;
+      margin: auto;
+   }
+}
+
+.checkButton{
+   width:40px;
+   height:20px;
+   background-color: $GrayishBlue;
+   border-radius: 100px;
+   transition:all 1s ease-in-out;
+   &-circle{
+       margin: 0 2px;
+       width: 15px;
+       height: 15px;
+       border-radius: 100px;
+       background-color: white;
+       position: absolute;
+       transition:all 1s ease-out;
+   }
+}
+.checkButton:hover{
+   cursor: pointer;
+}
+.activeButton{
+   background-color: $StrongCyan;
+   transition:all 1s ease-in-out;
+   &-circle{
+       transform: translateX(20px);
+       transition:all 1s ease-out;
+   }
+}
+
+.button{
+   background-color: $blue;
+   border:none;
+   border-radius: 5px;
+   color:white;
+}
+.button:hover{
+   cursor: pointer;
+   background-color: $hoverBlue;
+   color: rgb(25, 25, 54);
+   font-weight: bold;
+}
+.button:focus{
+   outline: none;
+}
+
+.backGround{
+   height: 19vh;
+   width: 100%;
+   position: absolute;
+   z-index: -1;
+   background-color: $blue;
+   left:0;
+   top:0;
+   border-bottom-left-radius: 90px;
+}
+
+a{
+   text-decoration: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.input{
+   background-color: var(--nav-bg);
+   margin: 0;
+   padding: 10px;
+   width: 80%;
+   height: 50px;
+   border-radius: 10px;
+   border: 2px solid var(--nav-border-c);
+   font-size: 16px;
+}
+.input:focus{
+   background-color: var(--nav-bg);
+   outline: none;
+   border-color: rgb(87, 87, 87);
+}
+.errorInput{
+   border-color: #f79696;
+}
+.errorInput:focus{
+   border-color: #f79696;
+}
+.errorInput2{
+   border:solid 3px #f79696!important;
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+}
+.errorInput2:focus{
+   border:solid 3px #f79696!important;
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+}
+.errorInput3{
+   border:solid 3px #f79696!important;
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+}
+.errorInput3:focus{
+   border:solid 3px #f79696!important;
+   border-top-right-radius: 5px;
+   border-bottom-right-radius: 5px;
+}
+
+:root{
+   --checkmark-bg: #ccc;
+   --checkmark-h-bg: rgb(136, 133, 133);
+
+   --header-logo-c: white;
+   --header-theme-i-c: white;
+   --header-theme-button-bg: hsl(174, 86%, 45%);
+   --header-theme-button-h-bg: hsl(174, 88%, 69%);
+   --header-theme-button-h-c: #073a36;
+
+   --nav-bg:white;
+   --nav-border-c:rgb(231, 231, 231);
+
+   --main-oferta-bg: white;
+   --main-oferta-span-c: #a2a4a5;
+   --main-oferta-h5-c: black;
+   --main-oferta-border-c: #f4f4f4;
+   --main-checkedCollection-bg:#F5F6F8;
+   --main-checkedCollection-border-c:#4550cf ;
+   
+   --card-oferta-bg-h: rgb(231, 231, 231);
+}
+
+:root.dark-theme{
+   background-color: #171717;
+   --main-oferta-bg: #333333;
+   --main-oferta-span-c: #cac5c5;
+   --main-oferta-h5-c: white;
+   --nav-bg:rgb(209, 202, 202);
+   --nav-border-c:rgb(97, 95, 95);
+   --main-oferta-border-c: #a8b8e9;
+   --main-checkedCollection-bg:#292929;
+   --main-checkedCollection-border-c: #a8b8e9;
+   --card-oferta-bg-h: #a8b8e9;
+}

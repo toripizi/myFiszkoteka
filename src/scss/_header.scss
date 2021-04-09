@@ -1,0 +1,28 @@
+header{
+   width: 100%;
+   height: 14vh;
+   #logo{
+      font-size: 30px;
+      color: var(--header-logo-c);
+      >span{
+         font-size: larger;
+      }
+   }
+   #theme{
+      >i{
+         margin: 0 15px;
+         font-size: 20px;
+         color: var(--header-theme-i-c);
+      }
+      >button{
+         width: 100px;
+         height: 40px;
+         background-color: var(--header-theme-button-bg);
+      }
+      >button:hover{
+         color: var(--header-theme-button-h-c);
+         background-color: var(--header-theme-button-h-bg);
+         font-weight: bold;
+      }
+   }
+}

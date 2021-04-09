@@ -1,0 +1,105 @@
+main{
+   width: 100%;
+   #oferty{
+      width: 50%;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .oferta{
+         width: 280px;
+         height: 200px;
+         margin: 25px 0px;
+         background-color: var(--main-oferta-bg);
+         border: solid 2px var(--main-oferta-border-c);
+         border-radius: 10px;
+         padding: 45px 30px 20px 30px;
+         display: flex;
+         flex-direction: column;
+         justify-content: flex-end;
+         position: relative;
+         .kwadrat{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 10%;
+            top: -20px;
+            border-radius: 10px;
+            color:white;
+         }
+         >span{
+            color: var(--main-oferta-span-c);
+            padding: 0;
+            margin: 0;
+            font-weight: 400;
+            font-size: 15px;
+         }
+         >h5{
+            padding: 0;
+            margin: 10px 0;
+            font-weight: 700;
+            font-size: 16px;
+            color: var(--main-oferta-h5-c);
+         }
+         >p{
+            color: $blue;
+            padding: 0;
+            margin:0;
+            margin-top: 30px;
+            font-weight: 700;
+         }
+         >button{
+            position: absolute;
+            right:10%;
+            bottom:10%;
+            width: 25px;
+            height: 25px;
+            border:none;
+            border-radius: 5px;
+            background-color: $blue;
+            color:white;
+            >i{
+               opacity: 0;
+               transition: opacity 0.2s ease-in-out;
+            }
+            .ukryj{
+               opacity: 1;
+            }
+         }
+         >button:hover{
+            background-color: $hoverBlue;
+            cursor: pointer;
+            color: rgb(19, 19, 56);
+            font-weight: bold;
+         }
+         >button:focus{
+            outline: none;
+         }
+         >label{
+            position: absolute;
+            right:10%;
+            bottom: 10%;
+         }
+         transition: all 0.5s ease-in-out;
+      }
+      .checkedCollection{
+         border:4px solid var(--main-checkedCollection-border-c)!important;
+         background-color: var(--main-checkedCollection-bg);
+      }
+      #addCollection{
+         background-color: rgb(163, 162, 162)!important;
+         padding: 0;
+         justify-content: center!important;
+         >i{
+            color: rgb(63, 63, 63);
+            font-size: 60px;
+            transition: ease-in-out 0.5s color;
+         }
+      }
+      #addCollection:hover{
+         background-color: gray!important;
+         cursor: pointer;
+         >i{
+            color: rgb(32, 32, 32);
+         }
+      }
+   }
+}

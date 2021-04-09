@@ -1,0 +1,370 @@
+{
+  "name": "",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "2c413e78faf1d6631fd7b094d14c2253",
+      "css": "cloud",
+      "code": 59408,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "e335adbc2d898c7d85d40c507796e7b4",
+      "css": "mail-1",
+      "code": 59399,
+      "src": "entypo"
+    },
+    {
+      "uid": "8e04c98c8f5ca0a035776e3001ad2638",
+      "css": "facebook",
+      "code": 61594,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "2cfb3f2b46b34a1790aec0aa846297b6",
+      "css": "menu-1",
+      "code": 59392,
+      "src": "entypo"
+    },
+    {
+      "uid": "da72ab64b02d997ff0521339f2997233",
+      "css": "hash",
+      "code": 61481,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "9bc2902722abb366a213a052ade360bc",
+      "css": "spin6",
+      "code": 59449,
+      "src": "fontelico"
+    },
+    {
+      "uid": "08a23ea96a596b1b5f12f6abbbc8f5f9",
+      "css": "location",
+      "code": 59393,
+      "src": "iconic"
+    },
+    {
+      "uid": "9f41cbda67dafb38926a4201a01691c9",
+      "css": "sun",
+      "code": 59394,
+      "src": "iconic"
+    },
+    {
+      "uid": "3dbc94f3878ecb524fd61d9de3aeabd5",
+      "css": "moon",
+      "code": 59395,
+      "src": "iconic"
+    },
+    {
+      "uid": "221947bea81f49a11b863c686a7bd235",
+      "css": "search",
+      "code": 59396,
+      "src": "websymbols"
+    },
+    {
+      "uid": "in76hg99crrkpcbz2rjnmgbiw74s72y0",
+      "css": "ok",
+      "code": 59397,
+      "src": "modernpics"
+    },
+    {
+      "uid": "55e2ff85b1c459c383f46da6e96014b0",
+      "css": "plus",
+      "code": 59398,
+      "src": "elusive"
+    },
+    {
+      "uid": "3db5347bd219f3bce6025780f5d9ef45",
+      "css": "tag",
+      "code": 59400,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "d35a1d35efeb784d1dc9ac18b9b6c2b6",
+      "css": "pencil",
+      "code": 59401,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "bbfb51903f40597f0b70fd75bc7b5cac",
+      "css": "trash",
+      "code": 61944,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "f48ae54adfb27d8ada53d0fd9e34ee10",
+      "css": "trash-empty",
+      "code": 59402,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "4oaz56fmzfvx7vry2o540n9l4z79fz8t",
+      "css": "right",
+      "code": 59403,
+      "src": "typicons"
+    },
+    {
+      "uid": "qqsxko9kqxh5g53lz33yonkpc2rpkvkn",
+      "css": "left",
+      "code": 59404,
+      "src": "typicons"
+    },
+    {
+      "uid": "mj2pxhfj0eumtbzirpdokhtzk00480uo",
+      "css": "up",
+      "code": 59405,
+      "src": "typicons"
+    },
+    {
+      "uid": "xq9z5jujkqhrf97s70hjek6otohmhr1y",
+      "css": "down",
+      "code": 59406,
+      "src": "typicons"
+    },
+    {
+      "uid": "c64623255a4a7c72436b199b05296c4f",
+      "css": "emo-happy",
+      "code": 59407,
+      "src": "fontelico"
+    },
+    {
+      "uid": "1ba44825e5f10920b4e3f1d0c73f79a2",
+      "css": "emo-wink",
+      "code": 59409,
+      "src": "fontelico"
+    },
+    {
+      "uid": "4dd56d61fd0dab19277824da301424b3",
+      "css": "emo-devil",
+      "code": 59410,
+      "src": "fontelico"
+    },
+    {
+      "uid": "68e298ff2d8b25dd7f647ed64f5ae690",
+      "css": "emo-surprised",
+      "code": 59411,
+      "src": "fontelico"
+    },
+    {
+      "uid": "bb68a13a3574b087d4350eff0b8d48e3",
+      "css": "emo-tongue",
+      "code": 59412,
+      "src": "fontelico"
+    },
+    {
+      "uid": "3a900d0e9f43f5409211f62bec557379",
+      "css": "emo-beer",
+      "code": 59413,
+      "src": "fontelico"
+    },
+    {
+      "uid": "cbc328d1c779a2b9e3b1199d904199a5",
+      "css": "emo-grin",
+      "code": 59414,
+      "src": "fontelico"
+    },
+    {
+      "uid": "5195e2dcb4a63fbb8c09896a8058f6ab",
+      "css": "emo-saint",
+      "code": 59416,
+      "src": "fontelico"
+    },
+    {
+      "uid": "2bd5f98482d86649958312ea2ab5bb40",
+      "css": "emo-laugh",
+      "code": 59417,
+      "src": "fontelico"
+    },
+    {
+      "uid": "fc92480dedc439d274d4e3e4b425edf4",
+      "css": "emo-squint",
+      "code": 59415,
+      "src": "fontelico"
+    },
+    {
+      "uid": "88a1241bcbe45c8e9616fd34d0f68a55",
+      "css": "aboveground-rail",
+      "code": 59418,
+      "src": "maki"
+    },
+    {
+      "uid": "f7440aaf96d590adceeff59b4dcb32d0",
+      "css": "airport",
+      "code": 59419,
+      "src": "maki"
+    },
+    {
+      "uid": "05417ae0104ab18a0fe454358579a987",
+      "css": "art-gallery",
+      "code": 59420,
+      "src": "maki"
+    },
+    {
+      "uid": "5c8822b310f20896a3c55a25b71008a8",
+      "css": "bar",
+      "code": 59421,
+      "src": "maki"
+    },
+    {
+      "uid": "9f5ce0d9f586e3df00449ad6ed6b0bf3",
+      "css": "basketball",
+      "code": 59422,
+      "src": "maki"
+    },
+    {
+      "uid": "aab7e7622e6ee1ed8166fb73f20e8c9a",
+      "css": "bicycle",
+      "code": 59423,
+      "src": "maki"
+    },
+    {
+      "uid": "492fe0ef4cb41d4e4de8502897685399",
+      "css": "cafe",
+      "code": 59424,
+      "src": "maki"
+    },
+    {
+      "uid": "244d3253e3ca5a0d602dd3574050fe93",
+      "css": "campsite",
+      "code": 59425,
+      "src": "maki"
+    },
+    {
+      "uid": "3fe687c833fa36452029b6d57e9149bf",
+      "css": "cinema",
+      "code": 59426,
+      "src": "maki"
+    },
+    {
+      "uid": "020dbfb0a5a4a25775bc751e5891e161",
+      "css": "college",
+      "code": 59427,
+      "src": "maki"
+    },
+    {
+      "uid": "fc455b9530e0b37facc289f42a120fdd",
+      "css": "commerical-building",
+      "code": 59428,
+      "src": "maki"
+    },
+    {
+      "uid": "5f1e8c36dffb553902e0e5c0c71faf6b",
+      "css": "credit-card",
+      "code": 59429,
+      "src": "maki"
+    },
+    {
+      "uid": "3e98530afcd866a9d607f8be2b5aa159",
+      "css": "minefield",
+      "code": 59430,
+      "src": "maki"
+    },
+    {
+      "uid": "19d9ceb791d76257545e308954808fc1",
+      "css": "monument",
+      "code": 59431,
+      "src": "maki"
+    },
+    {
+      "uid": "f43389fa3f5a5b152ed0231fe7bb18a7",
+      "css": "hospital",
+      "code": 59432,
+      "src": "maki"
+    },
+    {
+      "uid": "6dddcfc03d1eaa1bfee628ab291072b6",
+      "css": "heliport",
+      "code": 59433,
+      "src": "maki"
+    },
+    {
+      "uid": "484b90ec34c04b0db020143526d3c21a",
+      "css": "harbor",
+      "code": 59434,
+      "src": "maki"
+    },
+    {
+      "uid": "00341f8df1496285c31db5988db1d8b5",
+      "css": "grocery-store",
+      "code": 59435,
+      "src": "maki"
+    },
+    {
+      "uid": "8815bdcacab2495dd436f029e78a15d7",
+      "css": "giraffe",
+      "code": 59436,
+      "src": "maki"
+    },
+    {
+      "uid": "d06b13f30947afbbdae6977413144183",
+      "css": "garden",
+      "code": 59437,
+      "src": "maki"
+    },
+    {
+      "uid": "63af7ffdab0d3546333634c63554bb82",
+      "css": "fuel",
+      "code": 59438,
+      "src": "maki"
+    },
+    {
+      "uid": "429c0a4a7c5aba2f8a894f98b48529b3",
+      "css": "football",
+      "code": 59439,
+      "src": "maki"
+    },
+    {
+      "uid": "a9d3392264236bb9fe4d60a130c662d1",
+      "css": "fire-station",
+      "code": 59440,
+      "src": "maki"
+    },
+    {
+      "uid": "d27bcf5c8638e4078aaadae1d49b6909",
+      "css": "fast-food",
+      "code": 59441,
+      "src": "maki"
+    },
+    {
+      "uid": "5040789d726273a910ac5b59e9d8227a",
+      "css": "pitch",
+      "code": 59442,
+      "src": "maki"
+    },
+    {
+      "uid": "2e7c67db76849147d16a6763d07a03a9",
+      "css": "police",
+      "code": 59443,
+      "src": "maki"
+    },
+    {
+      "uid": "5cc58545bb38c912940470480d3df145",
+      "css": "restaurant",
+      "code": 59444,
+      "src": "maki"
+    },
+    {
+      "uid": "ebabd8ff4b67bdbba7660952c30813ca",
+      "css": "skiing",
+      "code": 59446,
+      "src": "maki"
+    },
+    {
+      "uid": "d8813acae9d35ada76fda399a6000587",
+      "css": "soccer",
+      "code": 59447,
+      "src": "maki"
+    },
+    {
+      "uid": "35b65a48339004a947a1dea3092e1daa",
+      "css": "tree-2",
+      "code": 59455,
+      "src": "maki"
+    }
+  ]
+}
