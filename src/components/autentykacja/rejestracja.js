@@ -16,7 +16,6 @@ export default function Rejestracja() {
       mainState.dispatch({ type: 'setLoading2', value: true });
       try {
          const res = await axios.post('/accounts:signUp', {
-            login: authState.state.login,
             email: authState.state.email,
             password: authState.state.password,
             password2: authState.state.password2,
@@ -31,13 +30,6 @@ export default function Rejestracja() {
       }
       mainState.dispatch({ type: 'setLoading2', value: false });
    }
-
-   useEffect(() => {
-      if (authState.state.login.length < 4 && authState.state.login.length > 1)
-         authState.dispatch({ type: "setErrorLogin", value: "jakis błąd" })
-      else authState.dispatch({ type: "setErrorLogin", value: "" })
-      // eslint-disable-next-line react-hooks/exhaustive-deps
-   }, [authState.state.login])
 
    useEffect(() => {
       if (authState.state.password.length < 6 && authState.state.password.length > 1)
@@ -62,13 +54,6 @@ export default function Rejestracja() {
    return (
       <div className="auth auth-rej flex flex-ai-c flex-jc-c">
          <div className="auth-box flex flex-ai-c">
-            <input
-               ref={login}
-               className={`input ${authState.state.errors.login ? "errorInput" : null}`}
-               type="text"
-               value={authState.state.login}
-               onChange={(e) => authState.dispatch({ type: "setLogin", value: e.target.value })}
-               placeholder="login" />
             <input
                ref={email}
                className={`input ${authState.state.errors.email ? "errorInput" : null}`}

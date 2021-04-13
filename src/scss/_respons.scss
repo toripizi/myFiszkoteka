@@ -1,0 +1,38 @@
+@media (max-width: "800px"){
+#root-app{
+   main{
+      flex-direction: column-reverse;
+      form{
+         width: 100%;
+         padding: 0;
+         margin: 0;
+      }
+      #oferty{
+         width: 100%!important;
+         justify-content: center;
+      }
+   }
+   nav{
+      #searchBar{
+         width: 100%;
+         border-radius: 10px;
+         input{
+            border: none;
+         }
+      }
+      #searchOption{
+         display: none;
+      }
+      #searchElse{
+         display: none;
+      }
+   }
+   header{
+      #theme{
+         button{
+            display: none;
+         }
+      }
+   }
+}
+}
