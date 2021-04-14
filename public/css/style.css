@@ -292,6 +292,72 @@ header i:hover {
   background-color: var(--header-theme-button-bg);
 }
 
+#mobileMenu {
+  position: fixed;
+  height: 100vh;
+  width: 40vw;
+  z-index: 5;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(40vw, 0);
+          transform: translate(40vw, 0);
+  -webkit-transition: -webkit-transform ease-in-out 0.5s;
+  transition: -webkit-transform ease-in-out 0.5s;
+  transition: transform ease-in-out 0.5s;
+  transition: transform ease-in-out 0.5s, -webkit-transform ease-in-out 0.5s;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #111;
+}
+
+#mobileMenu-header {
+  background-color: #4550cf;
+  padding: 5px;
+  width: 100%;
+  height: 100px;
+  border-left: #1d2358 solid 3px;
+}
+
+#mobileMenu-logOut {
+  margin: 5px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+}
+
+#mobileMenu-logOut button {
+  background-color: #4550cf;
+  width: 100%;
+}
+
+#mobileMenu .mobileMenu-opcja {
+  width: 100%;
+  height: 70px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #3a3a3a;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#mobileMenu .mobileMenu-opcja h3 {
+  padding: 0;
+  margin: 0;
+}
+
+#mobileMenu .mobileMenu-opcja i {
+  font-size: 25px;
+  padding: 10px;
+}
+
+#mobileMenu .mobileMenu-opcja:hover {
+  background-color: black;
+  cursor: pointer;
+}
+
 nav {
   width: 100%;
   height: 10vh;
@@ -378,7 +444,7 @@ nav #searchElse > label {
 }
 
 nav #searchElse-button {
-  width: 40%;
+  width: 100%;
   height: 100%;
   padding: 15px;
 }
@@ -1166,7 +1232,7 @@ footer {
   background-color: #171717;
   margin-top: 20px;
   color: #726f6f;
-  text-align: justify;
+  text-align: center;
   padding: 20px;
   line-height: 150%;
   font-size: 14px;

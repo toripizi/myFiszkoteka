@@ -48,13 +48,6 @@ export default function Menu() {
                onChange={(e) => setTerm2(e.target.value)} />
          </div>
          <div id="searchElse" className="flex flex-ai-c flex-jc-sb hide-for-mobile">
-            <label className="label">
-               <input type="checkbox" />
-               <div className="checkmark flex flex-ai-c flex-jc-c">
-                  <i className="icon-ok"></i>
-               </div>
-               Some Option
-            </label>
             <div id="searchElse-button">
                <button onClick={(e) => onSearch()}>Szukaj</button>
             </div>

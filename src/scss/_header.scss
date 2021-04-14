@@ -39,3 +39,53 @@ header{
    height: 40px;
    background-color: var(--header-theme-button-bg);
 }
+#mobileMenu{
+   position: fixed;
+   height: 100vh;
+   width: 40vw;
+   z-index: 5;
+   top: 0;
+   right: 0;
+   transform: translate(40vw, 0);
+   transition: transform ease-in-out 0.5s;
+   flex-direction: column;
+   background-color: #111;
+   &-header{
+      background-color: #4550cf;
+      padding: 5px;
+      width: 100%;
+      height: 100px;
+      border-left:rgb(29, 35, 88) solid 3px;
+   }
+   &-logOut{
+      margin:5px;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      button{
+      background-color: #4550cf;
+      width: 100%;
+      }
+   }
+   .mobileMenu-opcja{
+      width: 100%;
+      height: 70px;
+      font-size: 17px;
+      font-weight: bold;
+      color:rgb(58, 58, 58);
+      transition: background-color 0.3s ease-in-out;
+      h3{
+         padding: 0;
+         margin: 0;
+      }
+      i{
+         font-size: 25px;
+         padding: 10px;
+      }
+   }
+   .mobileMenu-opcja:hover{
+      background-color: black;
+      cursor: pointer;
+   }
+}

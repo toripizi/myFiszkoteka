@@ -1,9 +1,7 @@
 
 import Logo from '../UI/logo';
-import Wylogowanie from './wylogowanie/wylogowanie';
-import ChangeTheme from './changeTheme/changeTheme';
 import themeContext from '../../context/theme';
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import Menu from "./menu";
 
 function Header() {
@@ -16,11 +14,7 @@ function Header() {
    return (
       <header className={`flex flex-ai-c flex-jc-sb ${color}`}>
          <Logo />
-         <div className={`flex flex-ai-c flex-jc-sa`}>
-            <Wylogowanie cn="hide-for-mobile" />
-            <ChangeTheme cn="hide-for-mobile" />
-            <i className="icon-menu-1 hide-for-desktop" onClick={odkryj}></i>
-         </div>
+         <i className="icon-menu-1 " onClick={odkryj}></i>
          <Menu />
       </header>
    );
