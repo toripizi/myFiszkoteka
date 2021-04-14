@@ -21,11 +21,14 @@ function App() {
   const [state, dispatch] = useReducer(reducer, initialState)
 
   const changeTheme = () => {
-    const button = document.querySelector('.checkButton');
-    const buttonCircle = document.querySelector('.checkButton-circle');
-    buttonCircle.classList.toggle('activeButton-circle');
-    button.classList.toggle('activeButton');
-
+    const button = document.querySelectorAll('.checkButton');
+    const buttonCircle = document.querySelectorAll('.checkButton-circle');
+    button.forEach(el => {
+      el.classList.toggle('activeButton');
+    });
+    buttonCircle.forEach(el => {
+      el.classList.toggle('activeButton-circle');
+    });
     document.querySelector('html').classList.toggle('dark-theme');
   }
 
