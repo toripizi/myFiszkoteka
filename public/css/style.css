@@ -217,6 +217,7 @@ a {
 
 :root.dark-theme {
   background-color: #171717;
+  --checkmark-bg: #171717;
   --main-oferta-bg: #333333;
   --main-oferta-span-c: #cac5c5;
   --main-oferta-h5-c: white;
@@ -1103,12 +1104,12 @@ form .auth-rej .auth-box > input {
   #mobileMenu {
     position: fixed;
     height: 100vh;
-    width: 50vw;
+    width: 100vw;
     z-index: 5;
     top: 0;
     right: 0;
-    -webkit-transform: translate(50vw, 0);
-            transform: translate(50vw, 0);
+    -webkit-transform: translate(100vw, 0);
+            transform: translate(100vw, 0);
     -webkit-transition: -webkit-transform ease-in-out 0.5s;
     transition: -webkit-transform ease-in-out 0.5s;
     transition: transform ease-in-out 0.5s;
@@ -1117,10 +1118,45 @@ form .auth-rej .auth-box > input {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #5c4cbb;
+    background-color: #111;
   }
-  #mobileMenu span {
-    margin: 20px 0;
+  #mobileMenu-header {
+    background-color: #4550cf;
+    padding: 5px;
+    width: 100%;
+    height: 80px;
+  }
+  #mobileMenu-logOut {
+    margin: 5px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+  }
+  #mobileMenu-logOut button {
+    background-color: #4550cf;
+    width: 100%;
+  }
+  #mobileMenu .mobileMenu-opcja {
+    width: 100%;
+    height: 70px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #3a3a3a;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+  #mobileMenu .mobileMenu-opcja h3 {
+    padding: 0;
+    margin: 0;
+  }
+  #mobileMenu .mobileMenu-opcja i {
+    font-size: 25px;
+    padding: 10px;
+  }
+  #mobileMenu .mobileMenu-opcja:hover {
+    background-color: black;
+    cursor: pointer;
   }
 }
 
@@ -1129,5 +1165,10 @@ footer {
   height: 100px;
   background-color: #171717;
   margin-top: 20px;
+  color: #726f6f;
+  text-align: justify;
+  padding: 20px;
+  line-height: 150%;
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */

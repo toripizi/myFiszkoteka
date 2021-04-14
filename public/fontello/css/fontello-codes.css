@@ -57,8 +57,15 @@
 .icon-soccer:before { content: '\e837'; } /* '' */
 .icon-book-open-1:before { content: '\e838'; } /* '' */
 .icon-spin6:before { content: '\e839'; } /* '' */
+.icon-key:before { content: '\e83a'; } /* '' */
+.icon-doc-add:before { content: '\e83b'; } /* '' */
+.icon-folder-add:before { content: '\e83c'; } /* '' */
 .icon-tree-2:before { content: '\e83f'; } /* '' */
 .icon-hash:before { content: '\f029'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-angle-left:before { content: '\f104'; } /* '' */
+.icon-angle-right:before { content: '\f105'; } /* '' */
+.icon-angle-up:before { content: '\f106'; } /* '' */
+.icon-angle-down:before { content: '\f107'; } /* '' */
 .icon-pencil-squared:before { content: '\f14b'; } /* '' */
 .icon-trash:before { content: '\f1f8'; } /* '' */
