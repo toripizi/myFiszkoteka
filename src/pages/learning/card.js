@@ -124,7 +124,7 @@ export default function Card(props) {
          <div id="collection-buttons" className="flex flex-ai-c">
             <button id="show" className="button">Pokaż</button>
             <button ref={button1} id="know" className="button" onClick={() => learnChendler(memory.nieUmiem)}>Nie umiem</button>
-            <button ref={button2} id="half" className="button" onClick={() => learnChendler(memory.prawieUmiem)}>Prawie umime</button>
+            <button ref={button2} id="half" className="button" onClick={() => learnChendler(memory.prawieUmiem)}>Prawie umiem</button>
             <button ref={button3} id="notKnow" className="button" onClick={() => learnChendler(memory.umiem)}>Umiem</button>
          </div>
       </>

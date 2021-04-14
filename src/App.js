@@ -15,6 +15,7 @@ import AuthRoute from "./hooks/AuthRoute";
 import AddCollection from './pages/addCollection/addCollection';
 import LoadingIcon2 from './components/UI/LoadingIcon2';
 import Edit from "./pages/edit/edit";
+import Footer from "./components/Footer/footer"
 
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState)
@@ -61,24 +62,27 @@ function App() {
   );
 
   return (
-    <Router>
-      <ThemeContext.Provider value={{
-        color: state.theme,
-        onChange: changeTheme
-      }}>
-        <Reducer.Provider value={{
-          state: state,
-          dispatch: dispatch
+    <>
+      <Router>
+        <ThemeContext.Provider value={{
+          color: state.theme,
+          onChange: changeTheme
         }}>
-          <Layout
-            header={header}
-            menu={menu}
-            options={options}
-            content={content}
-          />
-        </Reducer.Provider>
-      </ThemeContext.Provider>
-    </Router>
+          <Reducer.Provider value={{
+            state: state,
+            dispatch: dispatch
+          }}>
+            <Layout
+              header={header}
+              menu={menu}
+              options={options}
+              content={content}
+            />
+          </Reducer.Provider>
+        </ThemeContext.Provider>
+      </Router>
+      <Footer />
+    </>
   );
 }
 export default App;

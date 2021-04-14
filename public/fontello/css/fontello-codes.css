@@ -20,7 +20,7 @@
 .icon-emo-devil:before { content: '\e812'; } /* '' */
 .icon-emo-surprised:before { content: '\e813'; } /* '' */
 .icon-emo-tongue:before { content: '\e814'; } /* '' */
-.icon-emo-beer:before { content: '\e815'; } /* '' */
+.icon-cancel:before { content: '\e815'; } /* '' */
 .icon-emo-grin:before { content: '\e816'; } /* '' */
 .icon-emo-squint:before { content: '\e817'; } /* '' */
 .icon-emo-saint:before { content: '\e818'; } /* '' */
@@ -52,10 +52,13 @@
 .icon-pitch:before { content: '\e832'; } /* '' */
 .icon-police:before { content: '\e833'; } /* '' */
 .icon-restaurant:before { content: '\e834'; } /* '' */
+.icon-book-open:before { content: '\e835'; } /* '' */
 .icon-skiing:before { content: '\e836'; } /* '' */
 .icon-soccer:before { content: '\e837'; } /* '' */
+.icon-book-open-1:before { content: '\e838'; } /* '' */
 .icon-spin6:before { content: '\e839'; } /* '' */
 .icon-tree-2:before { content: '\e83f'; } /* '' */
 .icon-hash:before { content: '\f029'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-pencil-squared:before { content: '\f14b'; } /* '' */
 .icon-trash:before { content: '\f1f8'; } /* '' */

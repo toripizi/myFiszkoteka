@@ -64,6 +64,10 @@ body {
   margin: auto;
 }
 
+#root-app {
+  min-height: 100vh;
+}
+
 .checkButton {
   width: 40px;
   height: 20px;
@@ -224,6 +228,18 @@ a {
   --card-oferta-bg-h: #a8b8e9;
 }
 
+@media (max-width: 699px) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
 header {
   width: 100%;
   height: 14vh;
@@ -238,8 +254,12 @@ header #logo > span {
   font-size: larger;
 }
 
+header #theme {
+  margin: 10px;
+}
+
 header #theme > i {
-  margin: 0 15px;
+  margin: 0 5px;
   font-size: 20px;
   color: var(--header-theme-i-c);
 }
@@ -254,6 +274,21 @@ header #theme > button:hover {
   color: var(--header-theme-button-h-c);
   background-color: var(--header-theme-button-h-bg);
   font-weight: bold;
+}
+
+header i {
+  font-size: 35px;
+  color: white;
+}
+
+header i:hover {
+  cursor: pointer;
+}
+
+.logOut {
+  width: 100px;
+  height: 40px;
+  background-color: var(--header-theme-button-bg);
 }
 
 nav {
@@ -289,6 +324,20 @@ nav #searchBar > input {
 nav #searchBar > input:focus {
   background-color: var(--nav-bg);
   outline: none;
+}
+
+nav #searchBar div {
+  height: 100%;
+}
+
+nav #searchBar div > i {
+  margin: 0 15px;
+  font-size: 20px;
+  color: #4550cf;
+}
+
+nav #searchBar div:hover {
+  cursor: pointer;
 }
 
 nav #searchOption {
@@ -521,6 +570,58 @@ main #oferty #addCollection:hover > i {
 #options > button {
   width: 120px;
   height: 40px;
+}
+
+#options2 {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 80px;
+  -webkit-transform: translate(0, 80px);
+          transform: translate(0, 80px);
+  z-index: 5;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  background-color: #171717e0;
+}
+
+#options2-buttons {
+  width: 66%;
+  height: 100%;
+}
+
+#options2-buttons a {
+  width: 50%;
+  font-size: 12px;
+  color: white;
+}
+
+#options2-buttons a i {
+  color: white;
+  font-size: 35px;
+}
+
+#options2-buttons a:hover {
+  cursor: pointer;
+}
+
+#options2-delete {
+  width: 34%;
+  height: 100%;
+  font-size: 12px;
+  color: white;
+}
+
+#options2-delete i {
+  color: white;
+  font-size: 35px;
+}
+
+#options2-delete:hover {
+  cursor: pointer;
 }
 
 .loader__wrap {
@@ -974,7 +1075,7 @@ form .auth-rej .auth-box > input {
   border: solid 4px #222222;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 699px) {
   #root-app main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -999,14 +1100,34 @@ form .auth-rej .auth-box > input {
   #root-app nav #searchBar input {
     border: none;
   }
-  #root-app nav #searchOption {
-    display: none;
+  #mobileMenu {
+    position: fixed;
+    height: 100vh;
+    width: 50vw;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    -webkit-transform: translate(50vw, 0);
+            transform: translate(50vw, 0);
+    -webkit-transition: -webkit-transform ease-in-out 0.5s;
+    transition: -webkit-transform ease-in-out 0.5s;
+    transition: transform ease-in-out 0.5s;
+    transition: transform ease-in-out 0.5s, -webkit-transform ease-in-out 0.5s;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #5c4cbb;
   }
-  #root-app nav #searchElse {
-    display: none;
+  #mobileMenu span {
+    margin: 20px 0;
   }
-  #root-app header #theme button {
-    display: none;
-  }
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #171717;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */

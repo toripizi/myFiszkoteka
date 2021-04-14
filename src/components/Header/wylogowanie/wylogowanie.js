@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import ReducerContext from '../../../context/reducer';
 
-export default function Wylogowanie() {
+export default function Wylogowanie(props) {
    const reducer = useContext(ReducerContext);
 
    const logout = () => {
@@ -11,7 +11,7 @@ export default function Wylogowanie() {
 
    return (
       reducer.state.isLogedin
-         ? <button className="button" onClick={logout}>Wyloguj się</button>
+         ? <button className={`button logOut ${props.cn}`} onClick={logout}>Wyloguj się</button>
          : null
    );
 }

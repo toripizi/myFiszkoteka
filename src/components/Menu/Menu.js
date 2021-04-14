@@ -26,15 +26,19 @@ export default function Menu() {
    return (
       <nav className="flex flex-ai-c flex-jc-sb">
          <div id="searchBar" className="flex flex-ai-c flex-jc-c">
-            <i className="icon-search"></i>
+            <i className="icon-search hide-for-mobile"></i>
+            <span style={{ width: '20px' }} className="hide-for-desktop"></span>
             <input
                id="main-input"
                onKeyDown={(e) => e.key === "Enter" && onSearch()}
                onChange={(e) => setTerm(e.target.value)}
                type="text"
                placeholder="Szukaj po tytule..." />
+            <div className="hide-for-desktop flex flex-ai-c flex-jc-c" onClick={(e) => onSearch()}>
+               <i className="icon-search searchicon"></i>
+            </div>
          </div>
-         <div id="searchOption" className="flex flex-ai-c flex-jc-c">
+         <div id="searchOption" className="flex flex-ai-c flex-jc-c hide-for-mobile">
             <i className="icon-location"></i>
             <input
                className="typeText"
@@ -43,7 +47,7 @@ export default function Menu() {
                onKeyDown={(e) => e.key === "Enter" && onSearch()}
                onChange={(e) => setTerm2(e.target.value)} />
          </div>
-         <div id="searchElse" className="flex flex-ai-c flex-jc-sb">
+         <div id="searchElse" className="flex flex-ai-c flex-jc-sb hide-for-mobile">
             <label className="label">
                <input type="checkbox" />
                <div className="checkmark flex flex-ai-c flex-jc-c">

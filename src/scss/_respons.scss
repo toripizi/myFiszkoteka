@@ -1,4 +1,4 @@
-@media (max-width: "800px"){
+@media (max-width: "699px"){
 #root-app{
    main{
       flex-direction: column-reverse;
@@ -20,19 +20,21 @@
             border: none;
          }
       }
-      #searchOption{
-         display: none;
-      }
-      #searchElse{
-         display: none;
-      }
    }
-   header{
-      #theme{
-         button{
-            display: none;
-         }
-      }
+}
+#mobileMenu{
+   position: fixed;
+   height: 100vh;
+   width: 50vw;
+   z-index: 5;
+   top: 0;
+   right: 0;
+   transform: translate(50vw, 0);
+   transition: transform ease-in-out 0.5s;
+   flex-direction: column;
+   background-color: rgb(92, 76, 187);
+   span{
+      margin: 20px 0;
    }
 }
 }

@@ -24,3 +24,39 @@
       height: 40px;
    }
 }
+#options2{
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100vw;
+   height: 80px;
+   transform: translate(0, 80px);
+   z-index: 5;
+   transition: transform 0.5s ease-in-out;
+   background-color: #171717e0;
+   &-buttons{
+      width: 66%;
+      height: 100%;
+      a{
+         width: 50%;
+         i{
+            color: white;
+            font-size: 35px;
+         }
+         font-size: 12px;
+         color: white;
+      }
+      a:hover{cursor: pointer;}
+   }
+   &-delete{
+      width: 34%;
+      height: 100%;
+      i{
+         color: white;
+         font-size: 35px;
+      }
+      font-size: 12px;
+      color: white;
+   }
+   &-delete:hover{cursor: pointer;}
+}

@@ -34,6 +34,9 @@ body{
       margin: auto;
    }
 }
+#root-app{
+   min-height: 100vh;
+}
 
 .checkButton{
    width:40px;
@@ -173,4 +176,16 @@ a{
    --main-checkedCollection-bg:#292929;
    --main-checkedCollection-border-c: #a8b8e9;
    --card-oferta-bg-h: #a8b8e9;
+}
+
+.hide-for-mobile{
+   @include breakpoint-down(small){
+       display: none;
+   }
+}
+
+.hide-for-desktop{
+   @include breakpoint-up(medium){
+       display: none;
+   }
 }
