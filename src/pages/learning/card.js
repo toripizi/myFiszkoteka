@@ -25,10 +25,10 @@ export default function Card(props) {
 
    const odkryjKarte = () => {
       englishWord.current.style.opacity = '1';
-      span.current.style.display = 'none';
-      button1.current.style.display = 'inline-block';
-      button2.current.style.display = 'inline-block';
-      button3.current.style.display = 'inline-block';
+      span.current.style.opacity = '0';
+      button1.current.style.display = 'flex';
+      button2.current.style.display = 'flex';
+      button3.current.style.display = 'flex';
    }
 
    function write(id, key, randomNumber, whichBox) {
@@ -79,7 +79,7 @@ export default function Card(props) {
       if (licznik < props.pojemnik.length * 2)
          sth()
       englishWord.current.style.opacity = '0';
-      span.current.style.display = 'flex';
+      span.current.style.opacity = '1';
       button1.current.style.display = 'none';
       button2.current.style.display = 'none';
       button3.current.style.display = 'none';
@@ -122,10 +122,40 @@ export default function Card(props) {
             : <button className="button oneMoreTime" onClick={() => props.oneMoreTime()}>Jeszcze raz?</button>}
 
          <div id="collection-buttons" className="flex flex-ai-c">
-            <button id="show" className="button">Pokaż</button>
-            <button ref={button1} id="know" className="button" onClick={() => learnChendler(memory.nieUmiem)}>Nie umiem</button>
-            <button ref={button2} id="half" className="button" onClick={() => learnChendler(memory.prawieUmiem)}>Prawie umiem</button>
-            <button ref={button3} id="notKnow" className="button" onClick={() => learnChendler(memory.umiem)}>Umiem</button>
+            <div ref={button1} className="flex flex-column flex-ai-c flex-jc-c">
+               <button
+                  id="notKnow" className="button"
+                  onClick={() => learnChendler(memory.nieUmiem)}>
+                  <i className="icon-cancel" />
+               </button>
+               <span>
+                  Nie umiem
+               </span>
+            </div>
+
+            <div ref={button2} className="flex flex-column flex-ai-c flex-jc-c">
+               <button
+                  id="half"
+                  className="button"
+                  onClick={() => learnChendler(memory.prawieUmiem)}>
+                  ~
+               </button>
+               <span>
+                  prawie umiem
+               </span>
+            </div>
+
+            <div ref={button3} className="flex flex-column flex-ai-c flex-jc-c">
+               <button
+                  id="know"
+                  className="button"
+                  onClick={() => learnChendler(memory.umiem)}>
+                  <i className="icon-ok" />
+               </button>
+               <span>
+                  Umiem
+               </span>
+            </div>
          </div>
       </>
    );

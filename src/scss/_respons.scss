@@ -1,5 +1,11 @@
 @media (max-width: "699px"){
 #root-app{
+   margin: 0;
+   width: 100%;
+   header{
+      margin: 0 10%;
+      width: 80%;
+   }
    main{
       flex-direction: column-reverse;
       form{
@@ -13,6 +19,9 @@
       }
    }
    nav{
+      margin: 0 10%;
+      width: 80%;
+      margin-bottom: 25px;
       #searchBar{
          width: 100%;
          border-radius: 10px;
