@@ -8,7 +8,7 @@ export default function AboutMe() {
    return (
       <>
          <Menu />
-         <main id="aboutMe" className="flex flex-column">
+         <div id="aboutMe" className="flex flex-column">
             <h1 className="flex flex-ai-c flex-jc-sb">
                Hi, I'm Maciek
                <i className="icon-menu-1 " id="menu" onClick={odkryj}></i>
@@ -25,7 +25,7 @@ export default function AboutMe() {
                   <i className="icon-github-text"></i> <a href="https://github.com/toripizi">GitHub</a>
                </span>
             </div>
-         </main>
+         </div>
       </>
    )
 }

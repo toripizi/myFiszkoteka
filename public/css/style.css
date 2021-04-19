@@ -1324,6 +1324,7 @@ footer {
   height: 100vh;
   font-family: 'Ubuntu Mono', monospace;
   position: relative;
+  padding: 10px;
 }
 
 #aboutMe #menu {
