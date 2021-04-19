@@ -99,6 +99,7 @@ export default function AddCollection() {
          dispatch: dispatch
       }}>
          <MenuBar />
+         <div className="backGround"></div>
          <main>
             <Options onClick={addColll} onClickPrev={goPrevFunction} onClickNext={goNextFunction} goNext={goNext} />
             {goNext ? <div className="flex flex-jc-sb" ><ChooseColor /><ChooseIcon /></div> : <>

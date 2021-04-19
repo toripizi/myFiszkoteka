@@ -92,6 +92,7 @@ export default function AddCollection() {
          state: state,
          dispatch: dispatch
       }}>
+         <div className="backGround"></div>
          <MenuBar />
          <main>
             <Options onClick={addColll} onClickPrev={goPrevFunction} onClickNext={goNextFunction} goNext={goNext} />

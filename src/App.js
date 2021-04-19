@@ -15,7 +15,9 @@ import AuthRoute from "./hooks/AuthRoute";
 import AddCollection from './pages/addCollection/addCollection';
 import LoadingIcon2 from './components/UI/LoadingIcon2';
 import Edit from "./pages/edit/edit";
-import Footer from "./components/Footer/footer"
+import Footer from "./components/Footer/footer";
+import ChangePassword from "./pages/changePassword/changePassword";
+import AboutMe from "./pages/aboutMe/aboutMe";
 
 function App() {
   const [state, dispatch] = useReducer(reducer, initialState)
@@ -33,9 +35,13 @@ function App() {
   }
 
   const header = (
-    <Route path="/">
-      <Header />
-    </Route>
+    <Switch>
+
+      <Route path="/o_mnie" />
+      <Route path="/" component={Header} />
+
+    </Switch >
+
   )
   const menu = (
     <Route exact path="/">
@@ -57,6 +63,8 @@ function App() {
         <Route path="/kolekcja/nauka/:id" component={Learning} />
         <AuthRoute path="/kolekcja/edycja/:id" component={Edit} />
         <AuthRoute path="/kolekcja/dodaj" component={AddCollection} />
+        <Route path="/o_mnie" component={AboutMe} />
+        <AuthRoute path="/konto/zmien_haslo" component={ChangePassword} />
         <Route component={NotFound} />
 
       </Switch >

@@ -37,6 +37,7 @@ export default function Home() {
 
    return (
       <main className="flex flex-jc-c flex-ai-c">
+         <div className="backGround"></div>
          {reducer.state.loading
             ? <Waiting />
             : (<><Oferty dane={reducer.state.dane} />

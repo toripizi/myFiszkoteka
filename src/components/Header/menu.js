@@ -21,13 +21,16 @@ function Menu() {
          </div>
          {reducer.state.isLogedin ?
             <>
-               <div className="flex flex-ai-c flex-jc-sb mobileMenu-opcja">
+               <Link
+                  to="/konto/zmien_haslo"
+                  className="flex flex-ai-c flex-jc-sb mobileMenu-opcja"
+                  onClick={zakryj}>
                   <h3>
                      <i className="icon-key"></i>
                      Zmień hasło
                   </h3>
                   <i className="icon-angle-right"></i>
-               </div>
+               </Link>
                <Link
                   className="flex flex-ai-c flex-jc-sb mobileMenu-opcja"
                   to="/kolekcja/dodaj"
@@ -40,13 +43,26 @@ function Menu() {
                   <i className="icon-angle-right"></i>
                </Link></> : null}
 
-         <div className="flex flex-ai-c flex-jc-sb mobileMenu-opcja">
+         <Link
+            to="/o_mnie"
+            className="flex flex-ai-c flex-jc-sb mobileMenu-opcja"
+            onClick={zakryj}>
             <h3>
                <i className="icon-college"></i>
                O Autorze
             </h3>
             <i className="icon-angle-right"></i>
-         </div>
+         </Link>
+         <Link
+            to="/"
+            className="flex flex-ai-c flex-jc-sb mobileMenu-opcja"
+            onClick={zakryj}>
+            <h3>
+               <i className="icon-campsite"></i>
+               Strona Główna
+            </h3>
+            <i className="icon-angle-right"></i>
+         </Link>
          <span id="mobileMenu-logOut" onClick={zakryj}>
             <Wylogowanie />
          </span>

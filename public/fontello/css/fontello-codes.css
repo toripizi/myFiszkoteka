@@ -47,7 +47,7 @@
 .icon-garden:before { content: '\e82d'; } /* '' */
 .icon-fuel:before { content: '\e82e'; } /* '' */
 .icon-football:before { content: '\e82f'; } /* '' */
-.icon-fire-station:before { content: '\e830'; } /* '' */
+.icon-2:before { content: '\e830'; } /* '' */
 .icon-fast-food:before { content: '\e831'; } /* '' */
 .icon-pitch:before { content: '\e832'; } /* '' */
 .icon-police:before { content: '\e833'; } /* '' */
@@ -60,6 +60,7 @@
 .icon-key:before { content: '\e83a'; } /* '' */
 .icon-doc-add:before { content: '\e83b'; } /* '' */
 .icon-folder-add:before { content: '\e83c'; } /* '' */
+.icon-lightbulb:before { content: '\e83d'; } /* '' */
 .icon-tree-2:before { content: '\e83f'; } /* '' */
 .icon-hash:before { content: '\f029'; } /* '' */
 .icon-facebook:before { content: '\f09a'; } /* '' */
@@ -69,3 +70,5 @@
 .icon-angle-down:before { content: '\f107'; } /* '' */
 .icon-pencil-squared:before { content: '\f14b'; } /* '' */
 .icon-trash:before { content: '\f1f8'; } /* '' */
+.icon-github-text:before { content: '\f307'; } /* '' */
+.icon-linkedin-rect:before { content: '\f312'; } /* '' */

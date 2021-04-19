@@ -39,6 +39,7 @@ export default function Learning() {
 
    return (
       <>
+         <div className="backGround"></div>
          {reducer.state.loading
             ? <Waiting />
             :
