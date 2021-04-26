@@ -4,8 +4,6 @@ https://fiszkoteka-kurs-react.web.app/#/
 
 Wykonana samodzielnie przezemnie, zrobiona dla nauki Reacta. 
 
-nie jest przystosowana na smarfony, lecz w najbliższym czasie może się to zmieni.
-
 Strona głowna
 
 ![image](https://user-images.githubusercontent.com/68200092/114242879-e23bb600-998b-11eb-8105-f180cb6ef2a7.png)
