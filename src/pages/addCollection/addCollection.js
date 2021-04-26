@@ -26,7 +26,7 @@ export default function AddCollection() {
 
    useEffect(() => {
       console.log(wordsState.addedWords.length)
-      if (wordsState.addedWords.length) dispatch({ type: 'setErrorWord', value: "" })
+      if (wordsState.addedWords.length > 1) dispatch({ type: 'setErrorWord', value: "" })
       else dispatch({ type: 'setErrorWord', value: "Musisz wprowadzić przynajmniej jedno słowo" })
    }, [wordsState])
 
@@ -96,7 +96,7 @@ export default function AddCollection() {
          <MenuBar />
          <main>
             <Options onClick={addColll} onClickPrev={goPrevFunction} onClickNext={goNextFunction} goNext={goNext} />
-            {goNext ? <div className="flex flex-jc-sb" ><ChooseColor /><ChooseIcon /></div> : <>
+            {goNext ? <div id="Choosee" className="flex flex-jc-sb" ><ChooseColor /><ChooseIcon /></div> : <>
                <AddWord onClick={add} />
                {wordsState.addedWords.map(el => (
                   <AddedWord onClick={deletee} key={el.key} id={el.key} {...el} />

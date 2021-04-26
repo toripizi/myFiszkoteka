@@ -443,6 +443,12 @@
       "css": "github-text",
       "code": 62215,
       "src": "brandico"
+    },
+    {
+      "uid": "ff16079eb4be12c49bf3014d2322acdd",
+      "css": "github-circled",
+      "code": 59454,
+      "src": "zocial"
     }
   ]
 }

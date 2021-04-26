@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import reducerAddColl from "../../../context/reducerAddColl";
 
-const icons = ['icon-sun', 'icon-emo-happy', 'icon-emo-wink', 'icon-emo-devil', 'icon-emo-surprised', 'icon-emo-tongue', 'icon-emo-grin', 'icon-emo-saint', 'icon-emo-laugh', 'icon-emo-squint', 'icon-aboveground-rail', 'icon-airport', 'icon-art-gallery', 'icon-bar', 'icon-basketball', 'icon-bicycle', 'icon-cafe', 'icon-campsite', 'icon-cinema', 'icon-college', 'icon-commerical-building', 'icon-credit-card', 'icon-minefield', 'icon-monument', 'icon-hospital', 'icon-heliport', 'icon-harbor', 'icon-grocery-store', 'icon-giraffe', 'icon-garden', 'icon-fuel', 'icon-football', 'icon-fire-station', 'icon-fast-food', 'icon-pitch', 'icon-police', 'icon-restaurant', 'icon-skiing', 'icon-soccer', 'icon-tree-2']
+const icons = ['icon-sun', 'icon-emo-happy', 'icon-emo-wink', 'icon-emo-devil', 'icon-emo-surprised', 'icon-emo-tongue', 'icon-emo-grin', 'icon-emo-saint', 'icon-emo-laugh', 'icon-emo-squint', 'icon-aboveground-rail', 'icon-airport', 'icon-art-gallery', 'icon-bar', 'icon-basketball', 'icon-bicycle', 'icon-cafe', 'icon-campsite', 'icon-cinema', 'icon-college', 'icon-commerical-building', 'icon-credit-card', 'icon-minefield', 'icon-monument', 'icon-hospital', 'icon-heliport', 'icon-harbor', 'icon-grocery-store', 'icon-giraffe', 'icon-garden', 'icon-fuel', 'icon-football', 'icon-lightbulb', 'icon-fast-food', 'icon-pitch', 'icon-police', 'icon-restaurant', 'icon-skiing', 'icon-soccer', 'icon-tree-2']
 
 export default function ChooseColor() {
    const form = useContext(reducerAddColl);
@@ -28,7 +28,7 @@ export default function ChooseColor() {
    }, [])
 
    return (
-      <div className="flex flex-ai-c flex-jc-c flex-column">
+      <div id="BOOXICON" className="flex flex-ai-c flex-jc-c flex-column">
          <h1>Wybierz Ikonke</h1>
          <div id="boxIcon" className="flex">
             {icons.map(icon => {

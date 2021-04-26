@@ -12,10 +12,19 @@ export default function AddWord(props) {
             onChange={e => form.dispatch({ type: "setPolish", value: e.target.value })}
             onKeyDown={(e) => e.key === "Enter" && props.onClick()}
             type="text"
-            className="flex flex-ai-c flex-jc-c input lewy"
+            className="hide-for-mobile flex flex-ai-c flex-jc-c input lewy"
          />
-         <div className="flex flex-ai-c flex-jc-c pojemnikPrawy">
+         <div id="divToAddWords" className="flex flex-ai-c flex-jc-c pojemnikPrawy">
             <input
+               id="lewyInput"
+               value={form.state.polish}
+               onChange={e => form.dispatch({ type: "setPolish", value: e.target.value })}
+               onKeyDown={(e) => e.key === "Enter" && props.onClick()}
+               type="text"
+               className="hide-for-desktop flex flex-ai-c flex-jc-c input lewy"
+            />
+            <input
+               id="prawyInput"
                value={form.state.english}
                onChange={e => form.dispatch({ type: "setEnglish", value: e.target.value })}
                onKeyDown={(e) => e.key === "Enter" && props.onClick()}
@@ -23,10 +32,13 @@ export default function AddWord(props) {
                style={{ width: "80%" }}
                className="flex flex-ai-c flex-jc-c input prawy"
             />
-            <button onClick={() => props.onClick()} className="button plusIcon flex flex-ai-c flex-jc-c">
+            <button onClick={() => props.onClick()} className="hide-for-mobile button plusIcon flex flex-ai-c flex-jc-c">
                <i className="icon-plus"></i>
             </button>
          </div>
+         <button onClick={() => props.onClick()} className="hide-for-desktop button plusIcon flex flex-ai-c flex-jc-c">
+            <i className="icon-plus"></i>
+         </button>
       </div>
    );
 }

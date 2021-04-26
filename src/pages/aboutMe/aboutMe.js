@@ -19,10 +19,14 @@ export default function AboutMe() {
            </p>
             <div id="more" className="flex ">
                <span className="flex flex-ai-c">
-                  <i className="icon-linkedin-rect"></i> <a href="https://www.linkedin.com/in/maciej-goncerzewicz-433a96201/">LinkedLn</a>
+                  <a href="https://www.linkedin.com/in/maciej-goncerzewicz-433a96201/">
+                     <i className="icon-linkedin-rect"></i>LinkedLn
+                  </a>
                </span>
                <span className="flex flex-ai-c">
-                  <i className="icon-github-text"></i> <a href="https://github.com/toripizi">GitHub</a>
+                  <a href="https://github.com/toripizi">
+                     <i className="icon-github-circled"></i>GitHub
+                  </a>
                </span>
             </div>
          </div>

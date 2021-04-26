@@ -102,7 +102,7 @@ export default function AddCollection() {
          <div className="backGround"></div>
          <main>
             <Options onClick={addColll} onClickPrev={goPrevFunction} onClickNext={goNextFunction} goNext={goNext} />
-            {goNext ? <div className="flex flex-jc-sb" ><ChooseColor /><ChooseIcon /></div> : <>
+            {goNext ? <div id="Choosee" className="flex flex-jc-sb" ><ChooseColor /><ChooseIcon /></div> : <>
                <AddWord onClick={add} />
                {state.words.map(el => (
                   <AddedWord onClick={() => deletee(el.key)} id={el.key} {...el} />

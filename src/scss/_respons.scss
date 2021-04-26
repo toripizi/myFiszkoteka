@@ -80,4 +80,41 @@
       cursor: pointer;
    }
 }
+
+#navForCategoryAndName{
+   width: 100%!important;
+   margin: 0!important;
+}
+#divToAddWords{
+   flex-direction: column;
+   width: 80%;
+   
+   #lewyInput{
+      border: none;
+      width: 100%;
+      border-bottom: solid 4px var(--nav-border-c);
+      font-size: 25px;
+   }
+   #prawyInput{
+      border: none;
+      width: 100%!important;
+      font-size: 25px;
+   }
+}
+
+#Choosee{
+   flex-direction: column;
+}
+#boxColor{
+   width: 270px;
+   height: 420px;
+}
+#boxIcon{
+   width: 270px;
+   height: 420px;
+}
+#BOOXICON{
+   margin-top:50px;
+}
+
 }

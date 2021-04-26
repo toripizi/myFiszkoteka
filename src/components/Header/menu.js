@@ -21,7 +21,7 @@ function Menu() {
          </div>
          {reducer.state.isLogedin ?
             <>
-               <Link
+               {/* <Link
                   to="/konto/zmien_haslo"
                   className="flex flex-ai-c flex-jc-sb mobileMenu-opcja"
                   onClick={zakryj}>
@@ -30,7 +30,7 @@ function Menu() {
                      Zmień hasło
                   </h3>
                   <i className="icon-angle-right"></i>
-               </Link>
+               </Link> */}
                <Link
                   className="flex flex-ai-c flex-jc-sb mobileMenu-opcja"
                   to="/kolekcja/dodaj"

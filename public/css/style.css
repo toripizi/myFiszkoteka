@@ -328,7 +328,7 @@ header i:hover {
 }
 
 #mobileMenu-logOut {
-  margin: 5px;
+  margin: 20px;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -1305,6 +1305,45 @@ form .auth-rej .auth-box > input {
     background-color: black;
     cursor: pointer;
   }
+  #navForCategoryAndName {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  #divToAddWords {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80%;
+  }
+  #divToAddWords #lewyInput {
+    border: none;
+    width: 100%;
+    border-bottom: solid 4px var(--nav-border-c);
+    font-size: 25px;
+  }
+  #divToAddWords #prawyInput {
+    border: none;
+    width: 100% !important;
+    font-size: 25px;
+  }
+  #Choosee {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #boxColor {
+    width: 270px;
+    height: 420px;
+  }
+  #boxIcon {
+    width: 270px;
+    height: 420px;
+  }
+  #BOOXICON {
+    margin-top: 50px;
+  }
 }
 
 footer {
@@ -1338,6 +1377,10 @@ footer {
   height: 20%;
 }
 
+#aboutMe h1 i:hover {
+  cursor: pointer;
+}
+
 #aboutMe p {
   font-size: 24px;
   color: #666;
@@ -1366,12 +1409,16 @@ footer {
   text-decoration: none;
 }
 
+#aboutMe #more span a i {
+  color: black;
+  font-size: 34px;
+}
+
 #aboutMe #more span a:hover {
   color: #5f4c4c;
 }
 
-#aboutMe #more span i {
-  color: black;
-  font-size: 34px;
+#aboutMe #more span a:hover i {
+  color: #5f4c4c;
 }
 /*# sourceMappingURL=style.css.map */
