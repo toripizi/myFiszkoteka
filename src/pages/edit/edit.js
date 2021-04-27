@@ -11,8 +11,10 @@ import ChooseIcon from "../addCollection/functionality/chooseIcon";
 import { putColl } from "../../dataBaseOperations/business"
 import { Redirect } from 'react-router-dom';
 import { useParams } from 'react-router';
+import { objectToArrayWithId } from "../../hooks/objectToArrayWithId";
+import { downloadColls } from "../../dataBaseOperations/business"
 
-export default function AddCollection() {
+export default function Edit() {
    const mainState = useContext(ReducerContext);
    const data = JSON.parse(window.localStorage.getItem('token-data'));
    const [goNext, setGoNext] = useState(false)
@@ -27,15 +29,31 @@ export default function AddCollection() {
       english: "",
       polish: "",
       change: "",
+      memory: {
+         nieUmiem: []
+      },
+      words: [],
       ...mainState.state.dataBaseColls.find(el => el.id === id)
    }
    const [state, dispatch] = useReducer(reducer, initialState);
-   const [tab, setTab] = useState([...state.memory.nieUmiem])
+   const [tab, setTab] = useState(state.memory.nieUmiem)
+
+   const fetch = async e => {
+      downloadColls(`/colls/${data.localId}`).then(result => {
+         dispatch({ type: "setDataBaseColls", value: [...objectToArrayWithId(result)] })
+         mainState.dispatch({ type: 'setLoading2', value: false });
+      })
+   }
+   useEffect(() => {
+      mainState.dispatch({ type: 'setLoading2', value: true });
+      fetch()
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+   }, [])
 
    useEffect(() => {
-      if (state.words.length) dispatch({ type: "setErrorWord", value: "" })
+      if (state.words.length > 1) dispatch({ type: "setErrorWord", value: "" })
       else dispatch({ type: "setErrorWord", value: "Musisz wprowadzić przynajmniej jedno słowo" })
-   }, [state.words])
+   }, [state.change])
 
    const add = () => {
       if (state.english && state.polish) {
@@ -64,7 +82,7 @@ export default function AddCollection() {
       })
 
       state.words.splice(index, 1);
-      dispatch({ type: "setChange", value: "" })
+      dispatch({ type: "setChange" })
 
    }
 

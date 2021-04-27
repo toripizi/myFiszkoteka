@@ -61,10 +61,10 @@ export default function Logowanie() {
                value={authState.state.password}
                onChange={(e) => authState.dispatch({ type: "setPassword", value: e.target.value })}
                placeholder="hasło" />
-            <a
+            <span
                style={{ width: "200px", height: "50px", margin: "20px" }}
-               className="button"
-               onClick={() => onClickEventLogowanie()}> Zaloguj się</a>
+               className="button flex flex-ai-c flex-jc-c"
+               onClick={() => onClickEventLogowanie()}> Zaloguj się</span>
             <h5 onClick={() => authState.dispatch({ type: "setHaveAccount", value: false })}>Zarejestruj się</h5>
          </div>
       </div>

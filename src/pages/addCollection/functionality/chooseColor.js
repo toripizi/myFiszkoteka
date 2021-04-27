@@ -33,6 +33,7 @@ export default function ChooseColor() {
             {kolory.map(kolor => {
                return (
                   <div
+                     key={kolor}
                      onClick={e => onClickHandler(e)}
                      id={`A${kolor}`}
                      style={{ backgroundColor: `#${kolor}` }}></div>)

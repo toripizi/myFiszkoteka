@@ -2,6 +2,8 @@ export function reducer(state, action) {
    switch (action.type) {
       case 'setName':
          return { ...state, title: action.value };
+      case 'setDataBaseColls':
+         return { ...state, ...action.value[0] };
       case 'setCategory':
          return { ...state, category: action.value };
       case 'setColor':
@@ -13,7 +15,9 @@ export function reducer(state, action) {
       case 'setEnglish':
          return { ...state, english: action.value };
       case 'setChange':
-         return { ...state, change: action.value };
+         let value;
+         state.change ? value = "" : value = " "
+         return { ...state, change: value };
       case 'setErrorName':
          return { ...state, errors: { ...state.errors, name: action.value } };
       case 'setErrorCategory':

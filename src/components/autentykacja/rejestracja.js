@@ -6,7 +6,6 @@ import axios from '../../axios/axiosAuth';
 export default function Rejestracja() {
    const mainState = useContext(ReducerContext);
    const authState = useContext(AuthContext);
-   const login = useRef();
    const password = useRef();
    const password2 = useRef();
    const email = useRef();
@@ -75,9 +74,10 @@ export default function Rejestracja() {
                value={authState.state.password2}
                onChange={(e) => authState.dispatch({ type: "setPassword2", value: e.target.value })}
                placeholder="Powtórz hasło" />
-            <a
+            <span
                style={{ width: "200px", height: "50px" }}
-               className="button" onClick={() => onClickEventRejestracja()}> Zarejestruj się</a>
+               className="button flex flex-ai-c flex-jc-c"
+               onClick={() => onClickEventRejestracja()}> Zarejestruj się</span>
             <h5 onClick={() => authState.dispatch({ type: "setHaveAccount", value: true })}>Mam już konto</h5>
          </div>
       </div>

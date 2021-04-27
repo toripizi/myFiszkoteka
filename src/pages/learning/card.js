@@ -12,7 +12,7 @@ export default function Card(props) {
    const [licznik, setLicznik] = useState(0)
    const [id, setId] = useState(0)
    const [key, setKey] = useState(props.pojemnik[0].key)
-   const memoryDefault = JSON.parse(window.localStorage.getItem('memoryDefault'));
+   // const memoryDefault = JSON.parse(window.localStorage.getItem('memoryDefault'));
    const [memory, setMemory] = useState({ ...props.memory })
    const [tab, setTab] = useState({
       id: null,
@@ -58,7 +58,6 @@ export default function Card(props) {
       let wylosowane = false;
       while (wylosowane !== true) {
          const randomN = Math.random();
-         console.log(randomN)
          if (randomN < 0.2 && memory.umiem.length > 1) {
             if (helpFunction(memory.umiem, "umiem"))
                wylosowane = true

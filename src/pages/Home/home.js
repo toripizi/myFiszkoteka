@@ -6,7 +6,7 @@ import ReducerContext from '../../context/reducer';
 import Auth from '../../components/autentykacja/autentykacja';
 import { objectToArrayWithId } from "../../hooks/objectToArrayWithId";
 import { downloadColls } from "../../dataBaseOperations/business"
-import axios from 'axios'
+// import axios from 'axios'
 
 export default function Home() {
    const reducer = useContext(ReducerContext);
@@ -36,20 +36,19 @@ export default function Home() {
       // eslint-disable-next-line react-hooks/exhaustive-deps
    }, [reducer.state.isLogedin])
 
-   const f = async e => {
-      try {
-         const res = await axios.get(`
-         https://geo.ipify.org/api/v1?apiKey=at_jQntRYfkHAi3hZ03REm9mXWikK9sk
-         `)
-         console.log(res)
-      } catch (ex) {
-         console.log(ex)
-      }
-   }
+   // const f = async e => {
+   //    try {
+   //       const res = await axios.get(`
+   //       https://geo.ipify.org/api/v1?apiKey=at_jQntRYfkHAi3hZ03REm9mXWikK9sk
+   //       `)
+   //    } catch (ex) {
+   //       console.log(ex)
+   //    }
+   // }
 
-   useEffect(() => {
-      f();
-   }, [])
+   // useEffect(() => {
+   //    f();
+   // }, [])
 
    return (
       <main className="flex flex-jc-c flex-ai-c">
