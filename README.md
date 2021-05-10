@@ -2,7 +2,7 @@
 Strona poświęcona nauce słówek, można z niej korzystać: 
 https://fiszkoteka-kurs-react.web.app/#/
 
-Wykonana samodzielnie przezemnie, zrobiona dla nauki Reacta. 
+Wykonana w celu nauki Reacta. 
 
 Strona głowna
 
