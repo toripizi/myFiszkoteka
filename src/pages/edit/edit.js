@@ -39,7 +39,7 @@ export default function Edit() {
    const [tab, setTab] = useState(state.memory.nieUmiem)
 
    const fetch = async e => {
-      downloadColls(`/colls/${data.localId}`).then(result => {
+      downloadColls(`/colls/${data.localId}/${id}`).then(result => {
          dispatch({ type: "setDataBaseColls", value: [...objectToArrayWithId(result)] })
          mainState.dispatch({ type: 'setLoading2', value: false });
       })

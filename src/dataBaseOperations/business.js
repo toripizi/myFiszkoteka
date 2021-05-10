@@ -25,8 +25,8 @@ export const addColl = async e => {
 }
 export const putColl = async e => {
    try {
-      console.log(e)
       await axios.put(`${e.id}/.json`, e.form);
+      console.log(e.form)
    }
    catch (ex) {
       console.log(ex)

@@ -20,6 +20,22 @@ export default function Learning() {
    const fetch = () => {
       reducer.dispatch({ type: 'setLoading2', value: true });
       downloadColls(adres).then(res => {
+         if (!reducer.state.isLogedin && !window.localStorage.getItem(`memory${id}`)) {
+            const mem = {
+               nieUmiem: [" "],
+               prawieUmiem: [" "],
+               umiem: [" "]
+            }
+            res.words.map(e => {
+               mem.nieUmiem.push(e.key)
+               return e;
+            })
+            window.localStorage.setItem(`memory${id}`, JSON.stringify(mem))
+            res.memory = mem;
+         }
+         else if (!reducer.state.isLogedin && window.localStorage.getItem(`memory${id}`)) {
+            res.memory = JSON.parse(window.localStorage.getItem(`memory${id}`));
+         }
          setPojemnik(res)
          reducer.dispatch({ type: 'setLoading2', value: false });
          setScore(res.memory.umiem.length - 1 ? Math.floor(((res.memory.umiem.length - 1) / res.words.length) * 100) : 0)
@@ -37,6 +53,7 @@ export default function Learning() {
       // eslint-disable-next-line react-hooks/exhaustive-deps
    }, [oneMoreTime]);
 
+
    return (
       <>
          <div className="backGround"></div>
@@ -46,7 +63,7 @@ export default function Learning() {
             <div id="boox" className="flex">
                {pojemnik.words ? <>
                   <div id="collection" className="flex  flex-jc-c">
-                     <Card adres={adres} memory={pojemnik.memory} oneMoreTime={tryAgain} pojemnik={pojemnik.words} setscore={(wynik) => setScore(wynik)} />
+                     <Card adres={adres} memory={pojemnik.memory} oneMoreTime={tryAgain} pojemnik={pojemnik.words} isLogedIn={reducer.state.isLogedin} id={id} setscore={(wynik) => setScore(wynik)} />
                   </div> <RightNav score={score} />
                </> : null}
             </div>}

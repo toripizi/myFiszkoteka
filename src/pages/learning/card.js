@@ -9,6 +9,7 @@ export default function Card(props) {
    const button1 = useRef();
    const button2 = useRef();
    const button3 = useRef();
+
    const [licznik, setLicznik] = useState(0)
    const [id, setId] = useState(0)
    const [key, setKey] = useState(props.pojemnik[0].key)
@@ -99,7 +100,12 @@ export default function Card(props) {
    const learnChendler = (tab) => {
       splicee();
       tab.push(key);
-      putColl({ id: `${props.adres}/memory`, form: memory })
+      if (props.isLogedIn) {
+         putColl({ id: `${props.adres}/memory`, form: memory })
+      }
+      else {
+         window.localStorage.setItem(`memory${props.id}`, JSON.stringify(props.memory))
+      }
       props.setscore(memory.umiem.length - 1 ? Math.floor(((memory.umiem.length - 1) / props.pojemnik.length) * 100) : 0)
       next();
    }
@@ -115,6 +121,7 @@ export default function Card(props) {
                <span className="flex flex-ai-c flex-jc-c">Pokaż</span>
             </div>
             <div id="collection-words-wordRight" className="word flex flex-ai-c flex-jc-c">
+
                <div ref={englishWord} className="flex flex-jc-c flex-ai-c letters">{props.pojemnik[id].english}</div>
                <span ref={span} onClick={odkryjKarte} className="flex flex-ai-c flex-jc-c">Pokaż</span>
             </div></div>

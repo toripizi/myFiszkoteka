@@ -15,7 +15,8 @@ function Oferta(props) {
    const reducer = useContext(ReducerContext);
    const [name, setName] = useState('');
    const [nameTwo, setNameTwo] = useState('');
-   const score = props.memory.umiem.length - 1 ? Math.floor(((props.memory.umiem.length - 1) / props.words.length) * 100) : 0
+   const mem = JSON.parse(window.localStorage.getItem(`memory${props.id}`)) ? JSON.parse(window.localStorage.getItem(`memory${props.id}`)) : { umiem: ' ' }
+   const score = reducer.state.isLogedin ? (props.memory.umiem.length - 1 ? Math.floor(((props.memory.umiem.length - 1) / props.words.length) * 100) : 0) : (mem.umiem.length - 1 ? Math.floor(((mem.umiem.length - 1) / props.words.length) * 100) : 0)
 
    const youHaveToCheck = (number) => {
       let bool;

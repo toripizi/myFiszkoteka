@@ -25,7 +25,6 @@ export default function AddCollection() {
    const [done, setDone] = useState(false)
 
    useEffect(() => {
-      console.log(wordsState.addedWords.length)
       if (wordsState.addedWords.length > 1) dispatch({ type: 'setErrorWord', value: "" })
       else dispatch({ type: 'setErrorWord', value: "Musisz wprowadzić przynajmniej jedno słowo" })
    }, [wordsState])
@@ -49,7 +48,6 @@ export default function AddCollection() {
 
    const addColll = () => {
       const tab = wordsState.addedWords.map(e => e.key)
-      console.log(tab)
       if (!state.errors.name && !state.errors.category && !state.errors.wordsLength) {
          mainState.dispatch({ type: 'setLoading2', value: true });
          const time = new Date();

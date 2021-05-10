@@ -5,6 +5,7 @@ export function reducer(state, action) {
       case 'setDataBaseColls':
          return { ...state, ...action.value[0] };
       case 'setCategory':
+         console.log(value)
          return { ...state, category: action.value };
       case 'setColor':
          return { ...state, color: action.value };
